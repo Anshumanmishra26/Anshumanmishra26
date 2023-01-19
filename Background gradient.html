@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title> Background grediant</title>
+    <style>
+      body {
+            height: 100vh;
+          /*  background-color: #1C2A44;*/
+        }
+        
+        .gradient {
+            width: 80vw;
+            height: 40vw;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #9581F4, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px black;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+     <div class="gradient"></div>
+
+  </body>
+  
+  <script>
+    document.write("hello ");
+    
+  </script>
+</html>
